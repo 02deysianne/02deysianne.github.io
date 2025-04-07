@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .header {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #00b3b3;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 26px;
+  }
+  
+  .header p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .perfil {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .fotos {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .fotos img {
+    width: 220px;
+    height: 220px;
+    border: 5px solid #00b3b3;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .fotos h2 {
+    margin-top: 16px;
+    font-size: 22px;
+  }
+  
+  .informacao {
+    flex: 2;
+    min-width: 280px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .informacao p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .nivel {
+    margin-top: 20px;
+    background-color: #eee;
+    color: #000;
+    border-left: 5px solid #00b3b3;
+    padding: 10px 16px;
+    font-weight: 600;
+    display: inline-block;
+    font-style: italic;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    min-width: 260px;
+    max-width: 500px;
+  }
+  
+  .card.horizontal {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .card.horizontal .icon {
+    font-size: 42px;
+    margin-right: 20px;
+    color: #00b3b3;
+    min-width: 50px;
+  }
+  
+  .card .text {
+    flex: 1;
+  }
+  
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  .card p {
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .qualificacoes {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    
+    .qualificacoes .icon {
+      font-size: 50px;
+      margin-right: 25px;
+      color: #00b3b3;
+      min-width: 50px;
+    }
+    
+    .qualificacoes .text h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-decoration: underline;
+    }
+    
+    .qualificacoes ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+      text-align: left;
+    }
+    
+    .qualificacoes li {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    .rodape {
+      background-color: #222;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 4px solid #00b3b3;
+    }
+    
+    .rodape h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    
+    .rodape p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ccc;
+    }  
+      
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .card.horizontal {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .card.horizontal .icon {
+      margin: 0 0 10px;
+    }
+  
+    .perfil {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .informacao {
+      text-align: center;
+      align-items: center;
+    }
+  
+    .informacao p {
+      text-align: center;
+    }
+  
+    .nivel {
+      align-self: center;
+    }
+  }
+  
